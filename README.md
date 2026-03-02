@@ -5,7 +5,7 @@ Aplicación web placeholder con Flask. Cuatro pantallas conectadas entre sí con
 ## Pantallas
 
 | # | Pantalla | Ruta | Descripción |
-|---|----------|------|-------------|
+|----|----------|------|-------------|
 | 1 | **Login** | `/login` | Autenticación con usuario y contraseña (validación backend) |
 | 2 | **Dashboard** | `/dashboard` | Resumen del usuario, estadísticas y búsqueda rápida con dropdown y texto |
 | 3 | **Perfil** | `/perfil` | Edición de datos personales: campos de texto, selects (departamento, ciudad, idioma), cambio de contraseña |
@@ -16,7 +16,7 @@ Las pantallas están conectadas: los datos editados en Perfil y Configuración s
 ## Usuarios de prueba
 
 | Usuario | Contraseña | Nombre | Rol |
-|---------|------------|--------|-----|
+|---------|-----------|--------|-----|
 | `admin` | `admin123` | Ana García | Administrador |
 | `user1` | `user123` | Carlos López | Usuario |
 | `user2` | `user456` | María Fernández | Usuario |
@@ -49,3 +49,7 @@ app-piloto/
 - Los datos se almacenan en memoria; se reinician al parar el servidor.
 - Todo está contenido en un único archivo `app.py` para simplificar la ejecución.
 - Esta aplicación es un **placeholder** destinado a ser reemplazado por la aplicación real.
+
+---
+
+Proyecto realizado por ADRIÁN ZAMBRANA
