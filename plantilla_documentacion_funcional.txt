@@ -1,0 +1,804 @@
+# Documentación Funcional - [Nombre del Sistema]
+
+**Versión:** 1.0  
+**Fecha:** [Fecha de generación]  
+**Generado desde:** [Fuentes utilizadas]  
+**Autor:** Sistema automatizado de documentación  
+
+---
+
+## 📊 Resumen Ejecutivo
+
+### Propósito del Documento
+
+Este documento describe las funcionalidades del sistema [Nombre del Sistema], incluyendo requisitos de negocio, arquitectura técnica, APIs, casos de prueba y elementos de interfaz de usuario.
+
+### Alcance
+
+**Incluye:**
+- Requisitos funcionales y de negocio
+- Arquitectura y tecnologías utilizadas
+- Catálogo de APIs y endpoints
+- Requisitos de seguridad y autenticación
+- Casos de prueba E2E
+- Selectores de elementos UI para automatización
+
+**No incluye:**
+- Requisitos no funcionales detallados (rendimiento, escalabilidad)
+- Documentación de infraestructura
+- Manuales de usuario final
+
+### Métricas de Calidad
+
+| Métrica | Valor | Fuente |
+|---------|-------|--------|
+| Requisitos totales | [Número] | [Fuente] |
+| Rutas UI | [Número] | [Fuente] |
+| Endpoints API | [Número] | [Fuente] |
+| Casos de prueba E2E | [Número] | [Fuente] |
+| Selectores UI | [Número] | [Fuente] |
+| Cobertura de testing | [Porcentaje]% | [Fuente] |
+| **Calidad global** | **[Porcentaje]%** | Cálculo automático |
+
+### Completitud por Sección
+
+| Sección | Completitud | Fuente de Información |
+|---------|-------------|----------------------|
+| Requisitos de Negocio | [Porcentaje]% | [Fuente] |
+| Arquitectura Técnica | [Porcentaje]% | [Fuente] |
+| APIs y Endpoints | [Porcentaje]% | [Fuente] |
+| Casos de Prueba | [Porcentaje]% | [Fuente] |
+| Trazabilidad | [Porcentaje]% | [Fuente] |
+
+---
+
+## 1. Requisitos de Negocio
+
+### 1.1. Propósito del Sistema
+
+[Descripción del propósito y objetivo principal del sistema]
+
+_**Fuente:** [Indicar fuente de información]_
+
+### 1.2. Alcance del Sistema
+
+**Funcionalidades incluidas:**
+- [Funcionalidad 1]
+- [Funcionalidad 2]
+- [Funcionalidad 3]
+
+**Funcionalidades excluidas:**
+- [Exclusión 1]
+- [Exclusión 2]
+
+_**Fuente:** [Indicar fuente de información]_
+
+### 1.3. Actores del Sistema
+
+| Actor | Descripción | Permisos / Acciones | Rol Técnico |
+|-------|-------------|---------------------|-------------|
+| [Actor 1] | [Descripción] | [Lista de permisos] | [ROL_ADMIN / ROL_USER] |
+| [Actor 2] | [Descripción] | [Lista de permisos] | [ROL_USER / ROL_GUEST] |
+
+_**Fuente:** [Indicar fuente de información]_
+
+### 1.4. Glosario de Términos de Negocio
+
+| Término | Definición |
+|---------|------------|
+| [Término 1] | [Definición] |
+| [Término 2] | [Definición] |
+
+---
+
+## 2. Requisitos Funcionales Detallados
+
+### 2.1. Módulo: [Nombre del Módulo]
+
+#### RF-001: [Título del Requisito]
+
+**Origen:** [ID de Historia de Usuario o fuente]  
+**Prioridad:** [Alta / Media / Baja]  
+**Estado:** [Implementado / Pendiente / Parcial]
+
+**Descripción:**  
+[Descripción completa del requisito funcional]
+
+_**Fuente:** [Indicar fuente de información]_
+
+**Actores involucrados:**
+- [Actor 1]
+- [Actor 2]
+
+**Precondiciones:**
+- [Precondición 1]
+- [Precondición 2]
+
+**Criterios de Aceptación:**
+1. [Criterio 1]
+2. [Criterio 2]
+3. [Criterio 3]
+
+_**Fuente:** [Indicar fuente de información]_
+
+**Reglas de Negocio:**
+- [Regla 1]
+- [Regla 2]
+
+**Postcondiciones:**
+- [Postcondición 1]
+- [Postcondición 2]
+
+---
+
+**✅ Implementación Técnica** _(si disponible)_
+
+- **Ruta UI:** [/ruta/inicio] → [/ruta/destino]
+- **Método HTTP:** [GET / POST / PUT / DELETE]
+- **Endpoint API:** [Método] [/api/ruta/endpoint]
+- **Request:**
+  ```json
+  {
+    "campo1": "tipo (validación)",
+    "campo2": "tipo (validación)"
+  }
+  ```
+- **Response 200 (Éxito):**
+  ```json
+  {
+    "status": "success",
+    "data": { ... }
+  }
+  ```
+- **Response 400/401/403/500 (Errores):**
+  - [Código]: [Descripción del error]
+  
+- **Validaciones Backend:** [Lista de anotaciones y validaciones]
+- **Validaciones Frontend:** [Lista de validaciones HTML5/JavaScript]
+
+_**Fuente:** [Indicar archivo fuente]_
+
+---
+
+**🧪 Casos de Prueba** _(si disponible)_
+
+- **[TC-001]:** [Título del caso de prueba] - Prioridad: [Alta/Media/Baja]
+- **[TC-002]:** [Título del caso de prueba negativo] - Prioridad: [Alta/Media/Baja]
+
+_**Fuente:** [Archivo de casos de prueba]_
+
+---
+
+**🎯 Selectores UI** _(si disponible)_
+
+| Elemento | Selector XPath | Tipo |
+|----------|----------------|------|
+| [Nombre elemento] | [XPath] | [input / button / select] |
+| [Nombre elemento] | [XPath] | [input / button / select] |
+
+_**Fuente:** [Archivo de selectores]_
+
+---
+
+**📈 Trazabilidad:**
+
+| Historia | Requisito | Ruta UI | API | Caso Prueba | Selector | Estado |
+|----------|-----------|---------|-----|-------------|----------|--------|
+| [US-001] | [RF-001] | [/ruta] | [POST /api/...] | [TC-001] | [xpath] | ✅ / ⚠️ / ❌ |
+
+---
+
+### 2.2. Módulo: [Otro Módulo]
+
+[Repetir estructura anterior para cada módulo/requisito]
+
+---
+
+## 3. Arquitectura Técnica
+
+### 3.1. Stack Tecnológico
+
+**Backend:**
+- Lenguaje: [Java / Node.js / Python / .NET]
+- Framework: [Spring Boot / Express / Django / ASP.NET]
+- Base de datos: [PostgreSQL / MySQL / MongoDB]
+- Autenticación: [JWT / OAuth2 / Session]
+
+**Frontend:**
+- Lenguaje: [TypeScript / JavaScript]
+- Framework: [Angular / React / Vue / Vanilla]
+- UI Components: [Bootstrap / Material / Custom]
+
+**Infraestructura:**
+- Servidor: [Tomcat / Nginx / IIS]
+- Contenedores: [Docker / Kubernetes]
+- CI/CD: [Jenkins / GitLab CI / GitHub Actions]
+
+_**Fuente:** [Indicar fuente de información]_
+
+### 3.2. Diagrama de Arquitectura
+
+```
+[Descripción textual de la arquitectura o referencia a diagrama externo]
+
+Cliente (Navegador)
+    ↓
+Frontend (TypeScript/HTML)
+    ↓
+Backend API (REST)
+    ↓
+Base de Datos
+```
+
+### 3.3. Rutas de Navegación (UI)
+
+| Ruta | Método | Componente | Autenticación | Roles Permitidos | Redirección |
+|------|--------|------------|---------------|------------------|-------------|
+| [/login] | GET | [login.html] | ❌ No | Público | [/dashboard] |
+| [/dashboard] | GET | [dashboard.html] | ✅ Sí | USER, ADMIN | - |
+| [/admin/users] | GET | [users.html] | ✅ Sí | ADMIN | - |
+
+_**Fuente:** [Archivo fuente]_
+
+### 3.4. Componentes Principales
+
+#### 3.4.1. Módulo de Autenticación
+- **Responsabilidad:** [Descripción]
+- **Componentes:** [Lista]
+- **Dependencias:** [Lista]
+
+#### 3.4.2. Módulo de Gestión de Usuarios
+- **Responsabilidad:** [Descripción]
+- **Componentes:** [Lista]
+- **Dependencias:** [Lista]
+
+[Repetir para cada módulo principal]
+
+---
+
+## 4. Catálogo de APIs y Endpoints
+
+### 4.1. Autenticación y Autorización
+
+#### POST /api/auth/login
+
+**Descripción:** [Descripción del endpoint]
+
+**Request:**
+```json
+{
+  "username": "string (requerido, 3-50 caracteres)",
+  "password": "string (requerido, mínimo 8 caracteres)"
+}
+```
+
+**Response 200 (Éxito):**
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "user": {
+    "id": 123,
+    "username": "usuario",
+    "role": "USER"
+  },
+  "expiresIn": 1800
+}
+```
+
+**Respuestas de Error:**
+- **400 Bad Request:** Campos faltantes o formato inválido
+  ```json
+  {"error": "Username is required"}
+  ```
+- **401 Unauthorized:** Credenciales inválidas
+  ```json
+  {"error": "Invalid credentials"}
+  ```
+- **500 Internal Server Error:** Error del servidor
+
+**Validaciones:**
+- Backend: `@Valid`, `@NotNull`, `@Size(min=3, max=50)` en username
+- Backend: `@Size(min=8)` en password
+- Frontend: `required`, `minlength=3`, `maxlength=50`
+
+**Reglas de Negocio:**
+- Username debe existir en base de datos
+- Password debe coincidir con hash almacenado (BCrypt)
+- Token JWT expira en 30 minutos
+- Máximo 5 intentos fallidos (bloqueo temporal)
+
+**Autenticación requerida:** ❌ No  
+**Roles permitidos:** Público
+
+_**Fuente:** [Archivo fuente]_
+
+---
+
+### 4.2. Gestión de Usuarios
+
+#### GET /api/users
+
+[Repetir estructura anterior]
+
+#### POST /api/users
+
+[Repetir estructura anterior]
+
+#### PUT /api/users/{id}
+
+[Repetir estructura anterior]
+
+#### DELETE /api/users/{id}
+
+[Repetir estructura anterior]
+
+---
+
+### 4.3. [Otro Módulo de APIs]
+
+[Repetir estructura para cada módulo]
+
+---
+
+## 5. Seguridad y Autenticación
+
+### 5.1. Mecanismo de Autenticación
+
+**Tipo:** [JWT / OAuth2 / Session-based]
+
+**Flujo de Autenticación:**
+1. Usuario envía credenciales a `/api/auth/login`
+2. Servidor valida credenciales contra base de datos
+3. Servidor genera token JWT firmado con clave secreta
+4. Cliente almacena token en `localStorage` / `sessionStorage`
+5. Cliente incluye token en header `Authorization: Bearer {token}` en requests subsiguientes
+6. Servidor valida token en cada request protegido
+7. Token expira después de [30 minutos] de inactividad
+
+**Configuración JWT:**
+- **Algoritmo:** HS256 / RS256
+- **Claim principal:** `sub` (user ID), `role`, `exp` (expiración)
+- **Token de refresh:** [Sí / No]
+- **Duración de sesión:** [30 minutos]
+
+_**Fuente:** [Archivo fuente]_
+
+### 5.2. Roles y Permisos
+
+| Rol | Descripción | Permisos |
+|-----|-------------|----------|
+| ADMIN | Administrador del sistema | Acceso completo, CRUD usuarios, configuración |
+| USER | Usuario estándar | Acceso a dashboard, edición de perfil propio |
+| GUEST | Invitado | Solo lectura, sin modificación |
+
+### 5.3. Rutas Protegidas
+
+| Ruta / Endpoint | Autenticación | Roles Permitidos | Anotación Backend |
+|-----------------|---------------|------------------|-------------------|
+| `/admin/**` | ✅ Requerida | ADMIN | `@PreAuthorize('hasRole("ADMIN")')` |
+| `/api/users` (POST) | ✅ Requerida | ADMIN | `@PreAuthorize('hasRole("ADMIN")')` |
+| `/dashboard` | ✅ Requerida | USER, ADMIN | `@PreAuthorize('isAuthenticated()')` |
+| `/login` | ❌ Pública | Todos | - |
+
+### 5.4. Gestión de Sesiones
+
+- **Expiración:** [30 minutos] de inactividad
+- **Renovación:** [Automática / Manual]
+- **Logout:** Elimina token del cliente (localStorage)
+- **Protección CSRF:** [Sí / No]
+- **HTTPS obligatorio:** [Sí / No]
+
+_**Fuente:** [Archivo fuente]_
+
+---
+
+## 6. Casos de Prueba E2E
+
+### 6.1. Índice de Casos de Prueba
+
+| ID | Título | Módulo | Prioridad | Tipo | Estado |
+|----|--------|--------|-----------|------|--------|
+| TC-001 | [Título] | [Módulo] | Alta | Positivo | ✅ |
+| TC-002 | [Título] | [Módulo] | Alta | Negativo | ✅ |
+| TC-003 | [Título] | [Módulo] | Media | Borde | ⚠️ |
+
+**Total de casos:** [Número] | **Alta prioridad:** [Número] | **Media:** [Número] | **Baja:** [Número]
+
+### 6.2. Casos Detallados
+
+#### TC-001: [Título del Caso de Prueba]
+
+**Prioridad:** [Alta / Media / Baja]  
+**Módulo:** [Módulo]  
+**Tipo:** [E2E (UI+API) / Solo UI / Solo API]
+
+**Precondiciones:**
+- [Precondición 1]
+- [Precondición 2]
+- Usuario de prueba existe: `testuser` / `Test123456!`
+- Aplicación corriendo en: `http://localhost:8080`
+
+**Pasos de Ejecución:**
+1. Navegar a `/login` → Verificar carga correcta (código 200)
+2. Ingresar en campo usuario: `testuser`
+3. Ingresar en campo password: `Test123456!`
+4. Hacer clic en botón "Entrar" → Trigger POST `/api/auth/login`
+5. Validar respuesta API: Status 200, body contiene `{"token": "...", "user": {...}}`
+6. Validar UI: Redirección automática a `/dashboard`
+7. Verificar token almacenado en `localStorage` con key `authToken`
+8. Verificar elementos de UI autenticado visibles (menú, nombre usuario)
+
+**Datos de Prueba:**
+- Username: `testuser`
+- Password: `Test123456!`
+- Endpoint: `http://localhost:8080/api/auth/login`
+
+**Resultados Esperados:**
+
+**UI:**
+- Redirección exitosa a `/dashboard`
+- Sin mensajes de error visibles
+- Menú de usuario autenticado visible
+- Nombre de usuario mostrado en header: "testuser"
+
+**API:**
+- Status HTTP: 200 OK
+- Response body contiene token JWT válido (formato: `eyJ...`)
+- Response body contiene objeto `user` con `id`, `username`, `role`
+
+**Sistema:**
+- Token almacenado en localStorage
+- Sesión válida por 30 minutos
+- Logs del servidor sin errores
+
+**Relaciones:**
+- **Requisito:** RF-001 (Autenticación de usuarios)
+- **Endpoint:** POST /api/auth/login
+- **Rutas:** /login → /dashboard
+- **Selectores:**
+  - Campo usuario: `//input[@placeholder='Introduce tu usuario']`
+  - Campo password: `//input[@type='password']`
+  - Botón entrar: `//button[contains(text(), 'Entrar')]`
+
+_**Fuente:** [Archivo de casos de prueba]_
+
+---
+
+#### TC-002: [Caso Negativo - Login Fallido]
+
+[Repetir estructura para casos negativos y de borde]
+
+---
+
+### 6.3. Estimación de Cobertura
+
+**Cobertura por Módulo:**
+
+| Módulo | Rutas Cubiertas | Endpoints Cubiertos | Casos Totales | Cobertura |
+|--------|-----------------|---------------------|---------------|-----------|
+| Autenticación | 2/2 (100%) | 2/2 (100%) | 5 | 100% |
+| Gestión Usuarios | 3/4 (75%) | 3/4 (75%) | 8 | 75% |
+| [Otro módulo] | [X/Y] | [X/Y] | [N] | [%] |
+
+**Cobertura Global:**
+
+| Categoría | Cobertura |
+|-----------|-----------|
+| Rutas UI | [80]% |
+| Interacciones UI | [87.5]% |
+| Endpoints API | [81.8]% |
+| Flujos de autenticación | [100]% |
+| Validaciones de negocio | [75]% |
+
+**Cobertura E2E Total: [82]%**
+
+**Gaps de Cobertura (Funcionalidades sin casos de prueba):**
+- [Funcionalidad 1]: [Razón]
+- [Funcionalidad 2]: [Razón]
+- [Funcionalidad 3]: [Razón]
+
+_**Fuente:** [Cálculo automático]_
+
+---
+
+## 7. Selectores y Elementos de UI
+
+### 7.1. Página: /login
+
+| Elemento | Descripción | XPath Recomendado | XPath Alternativo | Tipo | Confianza |
+|----------|-------------|-------------------|-------------------|------|-----------|
+| campo_usuario | Campo de entrada para username | `//input[@placeholder='Introduce tu usuario']` | `//input[@id='username']` | input | 0.8 |
+| campo_password | Campo de entrada para password | `//input[@type='password']` | `//input[@id='password']` | input | 0.9 |
+| boton_entrar | Botón de envío del formulario | `//button[contains(text(), 'Entrar')]` | `//button[@type='submit']` | button | 0.9 |
+| mensaje_error | Mensaje de error de autenticación | `//div[@class='error-message']` | `//div[@role='alert']` | div | 0.7 |
+
+### 7.2. Página: /dashboard
+
+[Repetir estructura para cada página]
+
+### 7.3. Funciones Helper Java
+
+```java
+// Campo usuario
+private WebElement findCampoUsuario(WebDriver driver) {
+    return driver.findElement(By.xpath("//input[@placeholder='Introduce tu usuario']"));
+}
+
+// Campo password
+private WebElement findCampoPassword(WebDriver driver) {
+    return driver.findElement(By.xpath("//input[@type='password']"));
+}
+
+// Botón entrar
+private WebElement findBotonEntrar(WebDriver driver) {
+    return driver.findElement(By.xpath("//button[contains(text(), 'Entrar')]"));
+}
+```
+
+_**Fuente:** [Archivo de selectores]_
+
+### 7.4. Notas sobre Selectores
+
+**Estrategia de selección:**
+- Prioridad 1: Texto visible y atributos semánticos (`placeholder`, `aria-label`)
+- Prioridad 2: IDs descriptivos
+- Prioridad 3: Atributos `name` funcionales
+- Prioridad 4: Contexto (tag + tipo + padre)
+- Último recurso: Índices (frágiles, evitar)
+
+**Advertencias:**
+- Selectores con confianza < 0.6 son frágiles y pueden requerir actualización
+- Web components requieren atención especial (shadow DOM)
+- IDs autogenerados (ej: `j_idt123`) NO se deben usar
+
+---
+
+## 8. Matriz de Trazabilidad Completa
+
+| Historia Usuario | Requisito | Módulo | Ruta UI | Elemento UI | API Endpoint | Caso Prueba | Selector XPath | Status | Fuentes |
+|------------------|-----------|--------|---------|-------------|--------------|-------------|----------------|--------|---------|
+| US-001 | RF-001 | Auth | /login | campo_usuario | POST /api/auth/login | TC-001, TC-002 | //input[@placeholder='...'] | ✅ Completo | Historia + Código + Test |
+| US-002 | RF-002 | Usuarios | /admin/users | btn_crear | POST /api/users | TC-010 | //button[@id='crear'] | ⚠️ Parcial | Código + Test |
+| US-003 | RF-003 | [Módulo] | [Ruta] | [Elemento] | [API] | [Test] | [XPath] | ❌ Sin implementar | Solo historia |
+
+**Leyenda de Estados:**
+- ✅ **Completo:** Requisito con implementación, tests y documentación completa
+- ⚠️ **Parcial:** Implementado pero sin tests o con gaps
+- ❌ **Sin implementar:** Requisito documentado pero sin código detectado
+
+**Estadísticas de Trazabilidad:**
+- Requisitos con implementación: [23/25] ([92]%)
+- Requisitos con casos de prueba: [21/25] ([84]%)
+- Requisitos con selectores UI: [18/25] ([72]%)
+- Requisitos completamente trazables: [18/25] ([72]%)
+
+_**Fuente:** [Fusión de múltiples fuentes]_
+
+---
+
+## 9. Análisis de Calidad
+
+### 9.1. Scoring de Calidad Detallado
+
+#### 9.1.1. Completitud: [92]%
+
+**Fórmula:**
+```
+Completitud = Promedio de:
+  - (Requisitos con implementación / Total requisitos) × 100
+  - (Rutas documentadas / Total rutas) × 100
+  - (APIs documentadas / Total APIs) × 100
+  - (Elementos UI con selector / Total elementos) × 100
+```
+
+**Desglose:**
+- Requisitos con implementación: [23/25] = [92]%
+- Rutas documentadas: [15/15] = [100]%
+- APIs documentadas: [22/22] = [100]%
+- Elementos UI con selector: [32/35] = [91]%
+
+**Promedio: [92]%** ✅✅
+
+#### 9.1.2. Trazabilidad: [88]%
+
+**Fórmula:**
+```
+Trazabilidad = Promedio de:
+  - (Requisitos trazables a código / Total requisitos) × 100
+  - (Código trazable a requisitos / Total funcionalidades) × 100
+  - (Tests vinculados a requisitos / Total tests) × 100
+```
+
+**Desglose:**
+- Requisitos → Código: [23/25] = [92]%
+- Código → Requisitos: [20/22] = [91]%
+- Tests → Requisitos: [21/25] = [84]%
+
+**Promedio: [88]%** ✅✅
+
+#### 9.1.3. Consistencia: [85]%
+
+**Fórmula:**
+```
+Consistencia = 100% - (% de gaps críticos detectados)
+Penalización por: validaciones inconsistentes frontend ≠ backend
+```
+
+**Desglose:**
+- Gaps detectados: [3/25] = [12]%
+- Validaciones consistentes: [18/22] = [82]%
+
+**Resultado: [85]%** ✅✅
+
+#### 9.1.4. Cobertura de Testing: [82]%
+
+**Fuente:** Archivo de casos de prueba E2E
+
+**Resultado: [82]%** ✅✅
+
+---
+
+### 9.2. Calidad Global
+
+**Fórmula:**
+```
+Calidad Global = (0.3 × Completitud) + (0.3 × Trazabilidad) + (0.2 × Consistencia) + (0.2 × Cobertura)
+```
+
+**Cálculo:**
+```
+= (0.3 × 92) + (0.3 × 88) + (0.2 × 85) + (0.2 × 82)
+= 27.6 + 26.4 + 17 + 16.4
+= 88.7%
+```
+
+**Calidad Global: 88.7% ✅✅ (ALTA)**
+
+**Clasificación:**
+- 90-100%: MÁXIMA ✅✅✅
+- 70-89%: ALTA ✅✅
+- 50-69%: MEDIA ✅
+- <50%: BAJA ⚠️
+
+---
+
+### 9.3. Análisis de Gaps y Consistencia
+
+#### 9.3.1. Requisitos Sin Implementación (Alta Severidad)
+
+❌ **RF-015: Recuperación de contraseña**
+- **Descripción:** Historia US-015 describe flujo de recuperación por email
+- **Status:** NO se encontró implementación en código
+- **Impacto:** Funcionalidad esperada por negocio no disponible
+- **Recomendación:** Implementar endpoint `/api/auth/recover-password` o actualizar historias
+
+❌ **RF-018: Cambio de email**
+- **Descripción:** [Descripción]
+- **Status:** NO implementado
+- **Impacto:** [Impacto]
+- **Recomendación:** [Recomendación]
+
+#### 9.3.2. Funcionalidades Sin Historia (Media Severidad)
+
+⚠️ **API: GET /api/health**
+- **Descripción:** Endpoint de health check detectado en código
+- **Status:** No hay historia de usuario asociada
+- **Impacto:** Funcionalidad técnica válida, puede no requerir historia
+- **Recomendación:** Validar si es endpoint interno o documentar en historias
+
+#### 9.3.3. Validaciones Inconsistentes (Media Severidad)
+
+⚠️ **Campo email: Formato de validación**
+- **Frontend:** Validación HTML5 básica (`type="email"`)
+- **Backend:** Regex personalizado (`@Email` + `@Pattern`)
+- **Impacto:** Frontend acepta emails que backend rechazará
+- **Recomendación:** Sincronizar validaciones o documentar discrepancia
+
+#### 9.3.4. Tests Faltantes (Baja-Media Severidad)
+
+⚠️ **RF-012: Edición de perfil**
+- **Status:** Implementado pero sin casos de prueba automatizados
+- **Recomendación:** Crear TC-XXX para flujo completo de edición
+
+---
+
+### 9.4. Recomendaciones de Mejora
+
+**Para alcanzar calidad > 95%:**
+
+1. **Implementar requisitos faltantes:** RF-015, RF-018 (sin código detectado)
+2. **Documentar endpoints técnicos:** Añadir a historias o justificar exclusión
+3. **Sincronizar validaciones:** Alinear frontend y backend
+4. **Completar casos de prueba:** Añadir tests para RF-012, RF-014
+5. **Actualizar selectores frágiles:** Elementos con confianza < 0.6
+6. **Mejorar trazabilidad:** Vincular funcionalidades sin historia a requisitos
+
+---
+
+## 10. Limitaciones del Análisis
+
+### 10.1. Inputs Proporcionados
+
+✅ **Disponibles:**
+- [Lista de archivos disponibles]
+
+❌ **No disponibles:**
+- [Lista de archivos faltantes]
+
+### 10.2. Información Inferida (Confianza Variable)
+
+⚠️ **Información inferida con confianza < 1.0:**
+- [Elemento 1]: Inferido desde [fuente], confianza [0.7]
+- [Elemento 2]: Asumido por [razón], confianza [0.6]
+
+**Recomendación:** Validar con stakeholders o documentación oficial
+
+### 10.3. Restricciones del Análisis Automatizado
+
+- Solo se analizan archivos proporcionados (no repositorio completo)
+- Código comentado o deshabilitado se ignora
+- Web components complejos pueden tener selectores con baja confianza
+- Lógica de negocio compleja puede requerir análisis manual
+
+---
+
+## 11. Glosario Técnico
+
+| Término | Definición |
+|---------|------------|
+| JWT | JSON Web Token - Estándar para tokens de autenticación |
+| E2E | End-to-End - Pruebas que cubren flujo completo usuario-sistema |
+| XPath | Lenguaje para seleccionar nodos en documentos XML/HTML |
+| CRUD | Create, Read, Update, Delete - Operaciones básicas de datos |
+| API | Application Programming Interface - Interfaz de programación |
+| UI | User Interface - Interfaz de usuario |
+| REST | Representational State Transfer - Estilo de arquitectura API |
+| BCrypt | Algoritmo de hash para passwords |
+| DTO | Data Transfer Object - Objeto para transferencia de datos |
+
+---
+
+## 12. Anexos
+
+### 12.1. Archivos Fuente Analizados
+
+**Código fuente:**
+- [Lista de archivos .java analizados]
+- [Lista de archivos .ts analizados]
+- [Lista de archivos .html analizados]
+
+**Documentación:**
+- [Historias de usuario]
+- [Plantilla de documentación]
+
+**Outputs intermedios:**
+- 01_ui_routes.json
+- 01_ui_interactions.json
+- 01_api_catalog.json
+- 01_auth_requirements.json
+- 02_casos_prueba.md
+- 03_ui_selectors.json
+
+### 12.2. Referencias
+
+- Documentación de Spring Boot: [URL]
+- Documentación de Angular: [URL]
+- Guía de Selenium WebDriver: [URL]
+- Estándares de REST APIs: [URL]
+
+### 12.3. Historial de Versiones
+
+| Versión | Fecha | Autor | Cambios |
+|---------|-------|-------|---------|
+| 1.0 | [Fecha] | Sistema automatizado | Versión inicial |
+
+---
+
+**Fin del Documento**
+
+---
+
+_Documento generado automáticamente por el Swarm de Generación de Documentación Funcional_  
+_Calidad global: [XX.X]%_  
+_Archivos analizados: [X] de [Y] disponibles_  
+_Fecha de generación: [YYYY-MM-DD HH:mm:ss]_
